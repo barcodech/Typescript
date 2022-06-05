@@ -1,37 +1,20 @@
-var character: string = 'Adam';
-var age: number;
-var LoggedIn: boolean;
+var age: any = true;
 
-LoggedIn = true;
-age = 20;
+age = true;
+console.log(age);
+age = 'Adam';
+console.log(age);
+age = {name: 'jack',age: 30};
+console.log(age);
 
-var barcode: string[] = ['Jack'];
+var mixed: any[] = [];
 
-//barcode = ['Adam','Jack','Matin'];
-barcode.push('Adam');
-//barcode.push(10);
-console.log(barcode);
-
-
-var mixed: (string|number|boolean)[] = [];
-mixed.push('hello');
-mixed.push(20);
-mixed.push(true);
+mixed.push(10);
+mixed.push('Adam');
+mixed.push(false);
 console.log(mixed);
 
-var simple: string|number|boolean;
+var barcode: {name: any, age: any};
 
-simple = 'hello';
-simple = 30;
-simple = true;
-
-var people: object;
-people = {name: 'Adam', age: 20};
-
-var people1: {
-    name: string,
-    age: number,
-    gender: boolean
-};
-
-people1 = {name: "Adam",age: 'jack', gender: true};
+barcode = {name: 30,age: 'Adam'};
+console.log(barcode);
