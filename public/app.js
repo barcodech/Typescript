@@ -1,19 +1,16 @@
 "use strict";
-//let hello: Function;
-let function1;
-function1 = (name, surname) => {
-    console.log(`${name} ${surname}`);
-};
-let function2;
-function2 = (number1, number2, words) => {
-    if (words === 'hello') {
-        return number1 + number2;
-    }
-    else {
-        return number1 - number2;
-    }
-};
-let function3;
-function3 = (adam) => {
-    console.log(`${adam.name} is ${adam.age} years old`);
-};
+const anchor = document.querySelector('a');
+if (anchor) {
+    console.log(anchor.href);
+}
+console.log(anchor.href);
+const form = document.querySelector('.new-item-form');
+console.log(form.children);
+const type = document.querySelector('#type');
+const tofrom = document.querySelector('#tofrom');
+const details = document.querySelector('#details');
+const amount = document.querySelector('#amount');
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
+});

@@ -1,25 +1,24 @@
-//let hello: Function;
-
-let function1: (a: string,b: string) => void;
-
-function1 = (name: string, surname: string) => {
-  console.log(`${name} ${surname}`);
+const anchor = document.querySelector('a')!;
+if(anchor) {
+  console.log(anchor.href);
 }
-
-let function2: (a: number,b: number, c: string) => number;
-
-function2 = (number1: number,number2: number, words: string) => {
-  if (words === 'hello'){
-    return number1 + number2;
-  } else {
-    return number1 - number2;
-  }
-}
-
-type person = {name: string,age: number};
-
-let function3: (obj: person) => void;
-
-function3 = (adam: {name: string,age: number}) => {
-  console.log(`${adam.name} is ${adam.age} years old`);
-}
+console.log(anchor.href);
+ 
+const form = document.querySelector('.new-item-form') as HTMLFormElement;
+console.log(form.children);
+ 
+const type = document.querySelector('#type') as HTMLInputElement;
+const tofrom = document.querySelector('#tofrom') as HTMLInputElement;
+const details = document.querySelector('#details') as HTMLInputElement;
+const amount = document.querySelector('#amount') as HTMLInputElement;
+ 
+form.addEventListener('submit', (e: Event) => {
+  e.preventDefault();
+ 
+  console.log(
+    type.value,
+    tofrom.value,
+    details.value,
+    amount.valueAsNumber
+  );
+});
