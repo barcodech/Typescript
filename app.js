@@ -1,25 +1,24 @@
 "use strict";
-var names = ['Adam', 'Jack', 'Matin'];
-names.push('John');
-//names.push(10);
-//names[1] = 20;
-var numbers = [10, 20, 30, 40];
-numbers.push(50);
-//numbers.push('Adam');
-//numbers[0] = 'Jack';
-var mixed = ['Adam', 10, 'Jack', 20];
-mixed.push(30);
-mixed.push('Matin');
-mixed[0] = 30;
-var barcode = {
-    name: 'Adam',
-    age: 50,
-    color: 'red'
-};
-barcode.name = 'Jackie';
-barcode.age = 40;
-barcode = {
-    name: 'Jackie',
-    age: 30,
-    color: 'blue'
-};
+var character = 'Adam';
+var age;
+var LoggedIn;
+LoggedIn = true;
+age = 20;
+var barcode = ['Jack'];
+//barcode = ['Adam','Jack','Matin'];
+barcode.push('Adam');
+//barcode.push(10);
+console.log(barcode);
+var mixed = [];
+mixed.push('hello');
+mixed.push(20);
+mixed.push(true);
+console.log(mixed);
+var simple;
+simple = 'hello';
+simple = 30;
+simple = true;
+var people;
+people = { name: 'Adam', age: 20 };
+var people1;
+people1 = { name: "Adam", age: 'jack', gender: true };
