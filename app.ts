@@ -1,13 +1,32 @@
-var character = 'Jack';
-var age = 25;
-var barcode = false;
+var names = ['Adam','Jack','Matin'];
 
-barcode = true;
-age = 10;
-character = 'Adam';
+names.push('John');
+//names.push(10);
+//names[1] = 20;
 
-var circle = (diameter: number) => {
-    return diameter * Math.PI;
+var numbers = [10,20,30,40];
+
+numbers.push(50);
+//numbers.push('Adam');
+//numbers[0] = 'Jack';
+
+var mixed = ['Adam',10,'Jack',20];
+mixed.push(30);
+mixed.push('Matin');
+mixed[0] = 30;
+
+var barcode = {
+    name: 'Adam',
+    age: 50,
+    color: 'red'
 };
 
-console.log(circle(7.5));
+barcode.name = 'Jackie';
+barcode.age = 40;
+
+barcode = {
+    name: 'Jackie',
+    age: 30,
+    color: 'blue'
+    
+};
